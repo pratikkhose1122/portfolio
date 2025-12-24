@@ -27,7 +27,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="max-w-4xl text-5xl font-bold tracking-tight text-white sm:text-7xl md:text-8xl"
+                    className="max-w-4xl text-5xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl"
                 >
                     Pratik Khose
                 </motion.h1>
@@ -36,7 +36,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="max-w-3xl text-2xl font-medium text-zinc-400 sm:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-500"
+                    className="max-w-3xl text-2xl font-medium text-muted-foreground sm:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-cyan-500 dark:from-emerald-400 dark:to-cyan-400"
                 >
                     Flutter • Android • Web Developer
                 </motion.h2>
@@ -45,7 +45,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="max-w-xl text-lg text-zinc-500 sm:text-xl"
+                    className="max-w-xl text-lg text-muted-foreground sm:text-xl"
                 >
                     I build fast, scalable, and modern mobile & web applications.
                 </motion.p>
@@ -73,17 +73,17 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="flex gap-6 pt-8 text-zinc-500"
+                    className="flex gap-6 pt-8 text-muted-foreground"
                 >
-                    <Link href="https://github.com/pratikkhose1122" target="_blank" className="hover:text-white transition-colors">
+                    <Link href="https://github.com/pratikkhose1122" target="_blank" className="hover:text-foreground transition-colors">
                         <Github className="h-6 w-6" />
                         <span className="sr-only">GitHub</span>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/pratik-khose-ab441937b" target="_blank" className="hover:text-white transition-colors">
+                    <Link href="https://www.linkedin.com/in/pratik-khose-ab441937b" target="_blank" className="hover:text-foreground transition-colors">
                         <Linkedin className="h-6 w-6" />
                         <span className="sr-only">LinkedIn</span>
                     </Link>
-                    <Link href="mailto:hello@example.com" className="hover:text-white transition-colors">
+                    <Link href="mailto:hello@example.com" className="hover:text-foreground transition-colors">
                         <Mail className="h-6 w-6" />
                         <span className="sr-only">Email</span>
                     </Link>

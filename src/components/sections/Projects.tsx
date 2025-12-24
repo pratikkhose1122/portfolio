@@ -42,8 +42,8 @@ export function Projects() {
                 transition={{ duration: 0.5 }}
                 className="mb-12"
             >
-                <h2 className="text-3xl font-bold tracking-tight text-white mb-4">Featured Projects</h2>
-                <p className="text-zinc-400 max-w-2xl">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">Featured Projects</h2>
+                <p className="text-muted-foreground max-w-2xl">
                     A selection of my recent work in mobile and web development.
                 </p>
             </motion.div>

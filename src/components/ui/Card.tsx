@@ -8,8 +8,7 @@ export function Card({ className, hoverEffect = false, ...props }: CardProps) {
     return (
         <div
             className={cn(
-                "relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 backdrop-blur-sm",
-                hoverEffect && "transition-colors duration-300 hover:bg-zinc-800/50 hover:border-zinc-700",
+                "glass-card rounded-2xl p-6",
                 className
             )}
             {...props}

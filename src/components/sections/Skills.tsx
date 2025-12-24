@@ -31,8 +31,8 @@ export function Skills() {
                 transition={{ duration: 0.5 }}
                 className="mb-12"
             >
-                <h2 className="text-3xl font-bold tracking-tight text-white mb-4">Technical Proficiency</h2>
-                <p className="text-zinc-400 max-w-2xl">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">Technical Proficiency</h2>
+                <p className="text-muted-foreground max-w-2xl">
                     A comprehensive toolset for building robust, cross-platform solutions.
                 </p>
             </motion.div>
@@ -45,14 +45,14 @@ export function Skills() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 backdrop-blur-sm hover:border-zinc-700 transition-colors"
+                        className="glass-card rounded-2xl p-6 hover:border-zinc-700 transition-colors"
                     >
-                        <h3 className="text-lg font-semibold text-white mb-4">{category.title}</h3>
+                        <h3 className="text-lg font-semibold text-foreground mb-4">{category.title}</h3>
                         <div className="flex flex-wrap gap-2">
                             {category.skills.map((skill) => (
                                 <span
                                     key={skill}
-                                    className="px-3 py-1 text-sm rounded-full bg-zinc-800/50 text-zinc-300 border border-zinc-700/50 hover:text-emerald-400 hover:border-emerald-500/30 transition-all cursor-default"
+                                    className="px-3 py-1 text-sm rounded-full bg-zinc-100 dark:bg-zinc-800/50 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/50 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all cursor-default"
                                 >
                                     {skill}
                                 </span>

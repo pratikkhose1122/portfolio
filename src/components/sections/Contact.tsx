@@ -17,8 +17,8 @@ export function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl font-bold tracking-tight text-white mb-6">Let's Build Something</h2>
-                    <p className="text-lg text-zinc-400 mb-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-foreground mb-6">Let's Build Something</h2>
+                    <p className="text-lg text-muted-foreground mb-8">
                         I'm currently accessible for new opportunities and collaborations.
                         Whether you need a mobile app, a web platform, or just want to connect.
                     </p>
@@ -30,19 +30,19 @@ export function Contact() {
                     <div className="space-y-4">
 
 
-                        <div className="flex items-center gap-4 text-zinc-300">
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-800/50 border border-zinc-700">
+                        <div className="flex items-center gap-4 text-muted-foreground">
+                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700">
                                 <Mail className="h-5 w-5" />
                             </div>
-                            <a href="mailto:pratikkhose1122@gmail.com" className="hover:text-emerald-400 transition-colors">
+                            <a href="mailto:pratikkhose1122@gmail.com" className="hover:text-emerald-500 transition-colors">
                                 pratikkhose1122@gmail.com
                             </a>
                         </div>
-                        <div className="flex items-center gap-4 text-zinc-300">
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-800/50 border border-zinc-700">
+                        <div className="flex items-center gap-4 text-muted-foreground">
+                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700">
                                 <Phone className="h-5 w-5" />
                             </div>
-                            <a href="tel:+919028705429" className="hover:text-emerald-400 transition-colors">
+                            <a href="tel:+919028705429" className="hover:text-emerald-500 transition-colors">
                                 +91 9028705429
                             </a>
                         </div>
@@ -71,29 +71,29 @@ export function Contact() {
                         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                             <div className="grid gap-4 md:grid-cols-2">
                                 <div className="space-y-2">
-                                    <label htmlFor="name" className="text-sm font-medium text-zinc-300">Name</label>
+                                    <label htmlFor="name" className="text-sm font-medium text-muted-foreground">Name</label>
                                     <input
                                         id="name"
                                         type="text"
-                                        className="w-full rounded-md border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                                        className="w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
                                         placeholder="John Doe"
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label htmlFor="email" className="text-sm font-medium text-zinc-300">Email</label>
+                                    <label htmlFor="email" className="text-sm font-medium text-muted-foreground">Email</label>
                                     <input
                                         id="email"
                                         type="email"
-                                        className="w-full rounded-md border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                                        className="w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
                                         placeholder="john@example.com"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-medium text-zinc-300">Message</label>
+                                <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Message</label>
                                 <textarea
                                     id="message"
-                                    className="min-h-[120px] w-full rounded-md border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 resize-y"
+                                    className="min-h-[120px] w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 resize-y"
                                     placeholder="Tell me about your project..."
                                 />
                             </div>

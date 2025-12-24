@@ -13,8 +13,8 @@ export function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl font-bold tracking-tight text-white mb-6">About Me</h2>
-                    <div className="space-y-4 text-lg text-zinc-400">
+                    <h2 className="text-3xl font-bold tracking-tight text-foreground mb-6">About Me</h2>
+                    <div className="space-y-4 text-lg text-muted-foreground">
                         <p>
                             I am a results-driven <strong>Mobile & Web Developer</strong> focused on building high-performance applications.
                             With deep expertise in <strong>Flutter</strong> and <strong>Android</strong>, I help businesses launch scalable mobile solutions
@@ -33,25 +33,25 @@ export function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="relative rounded-2xl bg-zinc-800/50 p-8 backdrop-blur-sm"
+                    className="relative glass-card bg-zinc-800/50 p-8 backdrop-blur-sm"
                 >
-                    <h3 className="text-xl font-semibold text-white mb-4">Quick Bio</h3>
-                    <ul className="space-y-4 text-zinc-400">
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Quick Bio</h3>
+                    <ul className="space-y-4 text-muted-foreground">
                         <li className="flex gap-3">
                             <span className="h-1.5 w-1.5 mt-2.5 rounded-full bg-emerald-500 flex-shrink-0" />
-                            <span>Based in <strong className="text-zinc-300">India</strong></span>
+                            <span>Based in <strong className="text-foreground">India</strong></span>
                         </li>
                         <li className="flex gap-3">
                             <span className="h-1.5 w-1.5 mt-2.5 rounded-full bg-emerald-500 flex-shrink-0" />
-                            <span>Focused on <strong className="text-zinc-300">Flutter & Android</strong></span>
+                            <span>Focused on <strong className="text-foreground">Flutter & Android</strong></span>
                         </li>
                         <li className="flex gap-3">
                             <span className="h-1.5 w-1.5 mt-2.5 rounded-full bg-emerald-500 flex-shrink-0" />
-                            <span>Building <strong className="text-zinc-300">Modern Web Apps</strong></span>
+                            <span>Building <strong className="text-foreground">Modern Web Apps</strong></span>
                         </li>
                         <li className="flex gap-3">
                             <span className="h-1.5 w-1.5 mt-2.5 rounded-full bg-emerald-500 flex-shrink-0" />
-                            <span>Open for <strong className="text-zinc-300">New Opportunities</strong></span>
+                            <span>Open for <strong className="text-foreground">New Opportunities</strong></span>
                         </li>
                     </ul>
                 </motion.div>
