@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Section } from "@/components/ui/Section";
@@ -28,19 +28,23 @@ export function Contact() {
                     </div>
 
                     <div className="space-y-4">
+
+
                         <div className="flex items-center gap-4 text-zinc-300">
                             <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-800/50 border border-zinc-700">
                                 <Mail className="h-5 w-5" />
                             </div>
-                            <a href="mailto:hello@example.com" className="hover:text-emerald-400 transition-colors">
-                                hello@example.com
+                            <a href="mailto:pratikkhose1122@gmail.com" className="hover:text-emerald-400 transition-colors">
+                                pratikkhose1122@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center gap-4 text-zinc-300">
                             <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-800/50 border border-zinc-700">
-                                <MapPin className="h-5 w-5" />
+                                <Phone className="h-5 w-5" />
                             </div>
-                            <span>India</span>
+                            <a href="tel:+919028705429" className="hover:text-emerald-400 transition-colors">
+                                +91 9028705429
+                            </a>
                         </div>
                         <div className="flex gap-4 mt-6">
                             <Link href="https://github.com/pratikkhose1122" target="_blank">
