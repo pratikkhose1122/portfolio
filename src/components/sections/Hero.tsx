@@ -36,9 +36,9 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="max-w-2xl text-2xl font-medium text-zinc-400 sm:text-3xl"
+                    className="max-w-3xl text-2xl font-medium text-zinc-400 sm:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-500"
                 >
-                    Building modern <span className="text-emerald-400">mobile & web</span> applications.
+                    Flutter • Android • Web Developer
                 </motion.h2>
 
                 <motion.p
@@ -47,7 +47,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="max-w-xl text-lg text-zinc-500 sm:text-xl"
                 >
-                    Flutter • Android • Web Developer based in India.
+                    I build fast, scalable, and modern mobile & web applications.
                 </motion.p>
 
                 <motion.div
@@ -57,14 +57,14 @@ export function Hero() {
                     className="flex flex-wrap gap-4 pt-4"
                 >
                     <Link href="#projects">
-                        <Button size="lg" className="group">
-                            View Work
+                        <Button size="lg" className="group bg-emerald-500 hover:bg-emerald-600 text-white border-0">
+                            View Projects
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </Link>
-                    <Link href="#contact">
-                        <Button variant="outline" size="lg">
-                            Contact Me
+                    <Link href="/resume.pdf" target="_blank">
+                        <Button variant="outline" size="lg" className="hover:bg-zinc-800">
+                            Download Resume
                         </Button>
                     </Link>
                 </motion.div>

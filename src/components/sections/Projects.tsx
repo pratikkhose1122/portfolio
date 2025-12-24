@@ -10,23 +10,25 @@ import { Button } from "@/components/ui/Button";
 const projects = [
     {
         title: "CloudSense",
-        description: "Air Quality & Cloud Monitoring application that displays AQI, environmental data, and cloud conditions in a clean modern UI. Published on Play Store.",
+        description: "A professional Air Quality & Cloud Monitoring application. Features real-time AQI tracking, detailed environmental data visualization, and cloud condition monitoring. Built for performance and reliability.",
         tech: ["Flutter", "Firebase", "REST APIs", "Android"],
-        image: "bg-emerald-900/20", // Placeholder color class
+        image: "bg-emerald-900/20",
         icon: <Smartphone className="h-10 w-10 text-emerald-400" />,
         featured: true,
-        links: { demo: "#", git: "#" }, // Add real link if available
-        linkText: "Live App"
+        links: { demo: "#", git: "#" },
+        linkText: "View Live App",
+        highlights: ["Real-time AQI Monitoring", "Cloud & Environment Data", "Scalable Firebase Backend"]
     },
     {
         title: "Personal Portfolio",
-        description: "Modern portfolio website built using Next.js, Tailwind CSS, and Framer Motion. Fully responsive with glassmorphism design.",
-        tech: ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
-        image: "bg-zinc-800", // Placeholder color class
+        description: "A top-tier developer portfolio built with the latest web standards. Utilizes Next.js App Router for server-side rendering, Framer Motion for smooth animations, and a responsive glassmorphism design.",
+        tech: ["Next.js 14", "Tailwind CSS", "Framer Motion", "React"],
+        image: "bg-zinc-800",
         icon: <Layout className="h-10 w-10 text-emerald-400" />,
         featured: false,
         links: { demo: "#", git: "#" },
-        linkText: "Live Demo"
+        linkText: "Live Website",
+        highlights: ["Next.js App Router", "Server Side Rendering", "Framer Motion Animations"]
     },
 ];
 
@@ -68,6 +70,17 @@ export function Projects() {
                             <div className="flex-1 flex flex-col">
                                 <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
                                 <p className="text-zinc-400 text-sm mb-4 line-clamp-3 bg-transparent">{project.description}</p>
+
+                                {project.highlights && (
+                                    <ul className="mb-4 space-y-1">
+                                        {project.highlights.map((highlight, i) => (
+                                            <li key={i} className="flex items-center text-xs text-zinc-500">
+                                                <span className="h-1 w-1 rounded-full bg-emerald-500 mr-2"></span>
+                                                {highlight}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
 
                                 <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                                     {project.tech.map((t) => (

@@ -4,12 +4,24 @@ import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "lucide-react";
 
-const skills = [
-    "Flutter", "Kotlin", "Android", "Firebase",
-    "React", "Next.js", "Tailwind CSS", "GitHub", "Dart", "APIs"
-];
+
 
 export function Skills() {
+    const skillCategories = [
+        {
+            title: "Mobile Development",
+            skills: ["Flutter", "Dart", "Android", "Kotlin", "iOS (Basic)"]
+        },
+        {
+            title: "Web Development",
+            skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"]
+        },
+        {
+            title: "Backend & Tools",
+            skills: ["Firebase", "Node.js", "REST APIs", "Git/GitHub", "Figma"]
+        }
+    ];
+
     return (
         <Section id="skills">
             <motion.div
@@ -19,23 +31,33 @@ export function Skills() {
                 transition={{ duration: 0.5 }}
                 className="mb-12"
             >
-                <h2 className="text-3xl font-bold tracking-tight text-white mb-4">Tech Stack</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-white mb-4">Technical Proficiency</h2>
                 <p className="text-zinc-400 max-w-2xl">
-                    A curated list of technologies I use to build scalable and performant applications.
+                    A comprehensive toolset for building robust, cross-platform solutions.
                 </p>
             </motion.div>
 
-            <div className="flex flex-wrap gap-3">
-                {skills.map((skill, index) => (
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {skillCategories.map((category, index) => (
                     <motion.div
-                        key={skill}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
+                        key={category.title}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: index * 0.05 }}
-                        className="px-4 py-2 rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors cursor-default backdrop-blur-sm"
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 backdrop-blur-sm hover:border-zinc-700 transition-colors"
                     >
-                        {skill}
+                        <h3 className="text-lg font-semibold text-white mb-4">{category.title}</h3>
+                        <div className="flex flex-wrap gap-2">
+                            {category.skills.map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="px-3 py-1 text-sm rounded-full bg-zinc-800/50 text-zinc-300 border border-zinc-700/50 hover:text-emerald-400 hover:border-emerald-500/30 transition-all cursor-default"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
                     </motion.div>
                 ))}
             </div>

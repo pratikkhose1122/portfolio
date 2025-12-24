@@ -16,14 +16,14 @@ export function About() {
                     <h2 className="text-3xl font-bold tracking-tight text-white mb-6">About Me</h2>
                     <div className="space-y-4 text-lg text-zinc-400">
                         <p>
-                            I am a mobile and web developer passionate about building high-quality applications.
-                            My core expertise lies in <strong>Flutter</strong> and <strong>Android</strong> development,
-                            complemented by strong skills in modern web technologies like <strong>React</strong> and <strong>Next.js</strong>.
+                            I am a results-driven <strong>Mobile & Web Developer</strong> focused on building high-performance applications.
+                            With deep expertise in <strong>Flutter</strong> and <strong>Android</strong>, I help businesses launch scalable mobile solutions
+                            that offer seamless user experiences.
                         </p>
                         <p>
-                            I enjoy turning complex requirements into clean, user-friendly solutions.
-                            Whether it's a mobile app for cloud monitoring or a responsive portfolio website,
-                            I focus on performance, design, and delivering real value.
+                            Beyond mobile, I craft modern web platforms using <strong>Next.js</strong> and <strong>React</strong>.
+                            My approach combines clean code architecture with pixel-perfect UI design, ensuring every project
+                            is production-ready and optimized for growth.
                         </p>
                     </div>
                 </motion.div>

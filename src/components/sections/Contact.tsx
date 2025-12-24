@@ -17,11 +17,15 @@ export function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl font-bold tracking-tight text-white mb-6">Get in Touch</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-white mb-6">Let's Build Something</h2>
                     <p className="text-lg text-zinc-400 mb-8">
                         I'm currently accessible for new opportunities and collaborations.
-                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        Whether you need a mobile app, a web platform, or just want to connect.
                     </p>
+
+                    <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-medium mb-8">
+                        Open to opportunities & collaborations
+                    </div>
 
                     <div className="space-y-4">
                         <div className="flex items-center gap-4 text-zinc-300">
