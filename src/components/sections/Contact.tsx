@@ -31,18 +31,18 @@ export function Contact() {
 
 
                         <div className="flex items-center gap-4 text-muted-foreground">
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700">
+                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[var(--glass-bg)] border border-[var(--glass-border)] shadow-sm">
                                 <Mail className="h-5 w-5" />
                             </div>
-                            <a href="mailto:pratikkhose1122@gmail.com" className="hover:text-emerald-500 transition-colors">
+                            <a href="mailto:pratikkhose1122@gmail.com" className="hover:text-primary transition-colors">
                                 pratikkhose1122@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center gap-4 text-muted-foreground">
-                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700">
+                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[var(--glass-bg)] border border-[var(--glass-border)] shadow-sm">
                                 <Phone className="h-5 w-5" />
                             </div>
-                            <a href="tel:+919028705429" className="hover:text-emerald-500 transition-colors">
+                            <a href="tel:+919028705429" className="hover:text-primary transition-colors">
                                 +91 9028705429
                             </a>
                         </div>
@@ -75,7 +75,7 @@ export function Contact() {
                                     <input
                                         id="name"
                                         type="text"
-                                        className="w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                                        className="w-full rounded-md border border-[var(--input-border)] bg-[var(--input-bg)] px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                                         placeholder="John Doe"
                                     />
                                 </div>
@@ -84,7 +84,7 @@ export function Contact() {
                                     <input
                                         id="email"
                                         type="email"
-                                        className="w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                                        className="w-full rounded-md border border-[var(--input-border)] bg-[var(--input-bg)] px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                                         placeholder="john@example.com"
                                     />
                                 </div>
@@ -93,7 +93,7 @@ export function Contact() {
                                 <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Message</label>
                                 <textarea
                                     id="message"
-                                    className="min-h-[120px] w-full rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 resize-y"
+                                    className="min-h-[120px] w-full rounded-md border border-[var(--input-border)] bg-[var(--input-bg)] px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50 resize-y"
                                     placeholder="Tell me about your project..."
                                 />
                             </div>
