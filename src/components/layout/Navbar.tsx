@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -57,7 +56,6 @@ export function Navbar() {
                             >
                                 Resume
                             </Link>
-                            <ThemeToggle />
                         </nav>
 
                         {/* Mobile Menu Button */}
